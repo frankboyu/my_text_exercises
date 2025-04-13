@@ -1,0 +1,35 @@
+1.  public, private, public, private, public and private
+2.  Gloam::Gloam(int g, const char * s) : glip(g), fb(s) {}
+    Gloam::Gloam(int g, const Frabjous & f): glip(g), fb(f) {}
+    void Gloam::tell()
+    {
+        cout << glip << endl;
+        fb.tell();
+        cout << endl;
+    }
+3.  Gloam::Gloam(int g, const char * s) : glip(g), Frabjous(s) {}
+    Gloam::Gloam(intl g, const Frabjous & f): glip(g), Frabjous(f) {}
+    void Gloam::tell()
+    {
+        cout << glip << endl;
+        Frabjous::tell();
+        cout << endl;
+    }
+4.  class Stack<Worker *>
+    {
+    private:
+        enum {MAX = 10};    // constant specific to class
+        Worker * items[MAX];    // holds stack items
+        int top;            // index for top stack item
+    public:
+        Stack();
+        bool isempty();
+        bool isfull();
+        bool push(const Worker * item);   // add item to stack (x) & should stay
+        bool pop(Worker * item);          // pop top into item (x) & should stay
+    };
+5.  ArrayTP<std::string, 12> first;
+    StackTP<ArrayTP<double, 12>> second;
+    ArrayTP<StackTP<Worker *>, 12> third;
+    4
+6.  Derived classes based on virtual base classes only have one object of the base classes, while nonvirtual base classes have one object of the base classes for each inherited object.

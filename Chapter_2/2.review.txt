@@ -1,0 +1,16 @@
+1. Functions
+2. Add the pre-defined header file iostream to the code
+3. Make the functions that belong to the std namespace available to the code
+4. cout << "Hello, world" << endl;
+5. int cheeses;
+6. cheeses = 32;
+7. cin >> cheeses;
+8. cout << "We have " << cheeses << " varieties of cheese" << endl;
+9.  (1) function named froop that takes a number with fractional as input and returns an integer to the calling function
+    (2) function named rattle that takes an integer as input and returns no value
+    (3) function named prune that takes no arguments and returns an integer to the calling function
+10. If the function has no return values and is defined as void type
+11. The pre-defined code related to cout is not declared in the program
+    (1)#include<iostream>   using namespace std;
+    (2)#include<iostream>   using std::cout;
+    (3)#include<iostream>   std::cout << "Please enter your PIN: ";

@@ -1,0 +1,11 @@
+1. To provide the option of choosing the type that best fits the particular requirements
+2. (1) short aa = 80; (2) unsigned int bb = 42110; (3) long long cc = 3E9
+3. (x)overflow and underflow
+4. The first is stored as a long integer with more storage assigned while the second is just normal integer
+5. (x)Yes
+6.  (1) char test = 88; cout << test << endl;
+    (2) cout << char (88) << endl;
+7. (x)Same
+8. (1) 74 (2) 4 (3) 0 (4) 4.5 (5) 3
+9. int test = int (x1) + int (x2);  int test = int (x1+x2);
+10. (x)int, float, char, char, float

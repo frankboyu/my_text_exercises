@@ -1,0 +1,13 @@
+1.  Entry-condition loop checks the condition before the statement while the exit-condition loop checks the condition after the statement
+    For loop and while loop are entry-condition loops. Do while loop is exit-condition loop
+2.  (x)0, 1, 2, 3, 4, each on its own line
+3.  (x)0369
+4,  6, 8, each on its own line
+5.  k = 8
+6.  for (int i=0, i<1024, i=i*2)
+    {
+        cout << i << endl;
+    }
+7.  Use a pair of curly braces to enclose the statements
+8.  (x)Not valid as the comma in the middle of numbers.
+9.  It skips spaces, tabs, and new lines

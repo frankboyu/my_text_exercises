@@ -1,0 +1,21 @@
+1.  a. no default initialization
+    b. didn't do a deep copying by using new
+    c. didn' allocate space first with new
+2.  a. forget to use proper delete in destructor
+    b. no proper assignment constructor and copy constructor to do the deep copying
+    c. forget to match the brackets between new and delete
+3.  default constructor: no initialization
+    copy constructor: member-wise copy
+    assignment operator: member-wise copy
+    destructor: do nothing
+    (add) address operator: return the address of the invoking object
+4.  // data -> private:
+    char personality[]; -> char * personality;
+    // methods -> public:
+    ostream & operator<<(ostream & os, nifty & n); -> friend ostream & operator<<(ostream & os, nifty & n);
+    personality = new char [strlen(s)]; -> personality = new char [strlen(s)+1];
+    personality = s; -> strcpy(personality, s);
+    os << n; -> os << n << endl; return os;
+    (add) const qualifiers to the arguments
+5.  default constructor, second constructor, second constructor, default constructor, copy constructor, second constructor , copy constructor (x) assignment operator, second and copy constructor (x) second constructor and assignment operator
+    b. copy constructor and assignment operator

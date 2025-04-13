@@ -1,0 +1,76 @@
+1.  Function prototype, function definition, function call
+2.  a.  void igor();
+    b.  float tofu(int);
+    c.  double mpg(double, double);
+    d.  long summation(long [], int);
+    e.  double doctor(const char *);
+    f.  void ofcourse(boss);
+    g.  char * plot(map *);
+3.  void set_array(int name[], int size, int value)
+    {
+        for (int i=0; i<size; i++)
+            name[i] = value;
+        return;
+    }
+4.  void set_array(int * ptr_start, int * ptr_end, int value)
+    {
+        for (int * i=ptr_start; i<ptr_end; i++)
+            *i = value;
+        return;
+    }
+5.  double max(const double arr[], int size)
+    {
+        double temp_max = arr[0];
+        for (int i=1; i<size; i++)
+        {
+            if (arr[i]>temp_max)
+                temp_max = arr[i];
+        }
+        return temp_max;
+    }
+6.  Because function takes the argument by value and works with a copy. The original value can not be altered and there is no need to use const qualifier.
+7.  char array, string literal, pointer to string
+8.  int replace(char * str, char c1, char c2)
+    {
+        int i = 0;
+        int count = 0;
+        while (str[i] != '\0')
+        {
+            if (str[i] == c1)
+            {
+                str[i] = c2;
+                count++;
+            }
+            i++;
+        }
+        return count;
+    }
+9.  (x)The array of char with values "pizza".
+    The 3rd element of the char array "taco", which is 'c'
+10. glitz
+    &glitz
+    Pass by value: works with a copy of data, keeps data integrity
+    Pass by address: can change the data, more efficient due to not copying the data
+11. int judge(int (*pf)(const char *));
+12. a.  void display(applicant this_applicant)
+        {
+            cout << "Name: " << this_applicant.name << endl;
+            for (int i=0; i<3; i++)
+            {
+                cout << "Credit rating " << i+1 << ": "<< this_applicant.credit_ratings[i] << endl;
+            }
+        }
+    b.  void display(applicant * this_applicant)
+        {
+            cout << "Name: " << this_applicant->name << endl;
+            for (int i=0; i<3; i++)
+            {
+                cout << "Credit rating " << i+1 << ": "<< this_applicant->credit_ratings[i] << endl;
+            }
+        }
+13. typedef void (*p_fun_1)(applicant * a);
+    typedef const char * (*p_fun_2)(const applicant * a1, const applicant * a2);
+    p_fun_1 p1 = f1;
+    p_fun_2 p2 = f2;
+    p_fun_1 ap[5];
+    p_fun_2 (*pa)[10];

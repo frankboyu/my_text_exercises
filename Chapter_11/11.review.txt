@@ -1,0 +1,17 @@
+1.  Stonewt Stonewt::operator*(double factor) const
+    {
+        return Stonewt(pounds*factor);
+    }
+2.  Friend function is not invoked by the class object. Any argument has to be passed explicitly as function arguments.
+    Member function is invoked by the class object. The invoking object is passed implicitly.
+3.  (x)No, if the class has methods to return the class's Member
+4.  Stonewt operator*(double factor, const Stonewt & this_stonewt)
+    {
+        return this_stonewt*factor;
+    }
+5.  sizeof, ., .*, ::, ?:, typeid, const_cast, dynamic_cast, reinterpret_cast, static_cast.
+6.  They can be overloaded only with memeber functions
+7.  Vector::operator double() const
+    {
+        return mag;
+    }

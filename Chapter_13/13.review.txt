@@ -1,0 +1,19 @@
+1.  All data memebers and methods except constructors, destructors and assignment operator
+2.  constructors, destructors and assignment operator. ALSO FRIENDS!
+3.  void: chain assignment will not be possible
+    baseDMA: A temporary object will be constructed and destroyed
+4.  constructors: base class first, then derived class
+    destructors: derived class first, then base class
+5.  Yes, as the derived class doesn't inherit the base class constructor, however, a default one can be generated for the derived class.
+6.  derived class method
+7.  When the memberwise copying is not desired, for example, members initialized by new, or static members
+8.  Yes. As a derived class object is always a base class object with upcasting
+    No, unless with explicit downcasting
+9.  Yes. As a derived class object is always a base class object with upcasting
+    No, unless with explicit downcasting or conversion operator.
+10. Because a derived class object is always a base class object with upcasting
+11. Because the copy constructor can use the derived class object to create a base class object
+12. To save time for creating and destroying temporary objects. And to properly use the methods redefined in derived classes
+13. The method defined in Corporation class
+    The method defined in PublicCorporation class
+14. It's not a proper is-a relationship, as a house is not a kitchen

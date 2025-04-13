@@ -1,0 +1,38 @@
+1. a. char actors[30];
+   b. short betsie[100];
+   c. float chuck[13];
+   d. long double dipsea[64];
+2. a. array<char, 30> actors;
+   b. array<short, 100> betsie;
+   c. array<float, 13> chuck;
+   d. array<long double, 64> dipsea;
+3. int odds[5] = {1,3,5,7,9};
+4. int even = odds[0] + odds[4];
+5. cout << ideas[1] << endl;
+6. char test[13] = "cheeseburger";
+7. string test = "Waldorf Salad";
+8.  struct fish
+    {
+        string kind;
+        int weight;
+        double length;
+    };
+9. fish test = {"name", 2, 2.5};
+10. enum Response = {No, Yes, Maybe};
+11. double* pointer = &ted; cout << *pointer << endl;
+12. float* pointer = treacle; cout << *pointer << " " << *(pointer+9) << endl;
+13. int size;
+    cout << "Enter a positive integer: ";
+    cin >> size;
+    int * pointer = new int [size];
+    vector<int> vt(size);
+14. Yes, it prints out the address of where this string literal is located.
+15. fish * pointer = new fish;
+    cin >> pointer->kind;
+16. Then the address can only store the input address until a white space, ignoring whatever follows.
+17. #include <vector>
+    #include <array>
+    #include <string>
+    const size = 10;
+    std::vector<std::string> vi(size);
+    std::array<std::string, size> ai;

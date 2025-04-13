@@ -1,0 +1,43 @@
+1.  A class is a user-defined type with data members and functions combined in one unit
+2.  put the interface in the public section
+    put the data members in the private section
+    private section can not be directly accessed and only edited by member functions
+3.  An object is an instance of a class
+4.  They are shared between different objects, while data members are separately defined
+5.  class Bank_account
+    {
+    private:
+        char * depositor_name; (v) char depositor_name[40];
+        char * account_number; (v) char account_number[25];
+        double balance;
+    public:
+        Bank_account();
+        void show() const;
+        void deposit(double amount);
+        void withdraw(double amount);
+    };
+6.  When a new oject is created. When a object passes out of existence.
+7.  Bank_account::Bank_account()
+    {
+        depositor_name = "no name";
+        account_number = "no number";
+        balance = 0.0;
+    }
+    (v) Bank_account::Bank_account(const string & my_depositor_name, const string my_account_number, double my_balance)
+    {
+        depositor_name = my_depositor_name;
+        account_number = my_account_number;
+        balance = my_balance;
+    }
+8.  The constructor used when the new object is not explicitly initialized.
+    To make sure every new object is properly initialized.
+9.  (x)const std::string get_company() { return company; }
+    const int get_shares() { return shares; }
+    const double get_share_val () { return share_val; }
+    const double get_total_val () { return total_val; }
+    (v) const string & get_company() const { return company; }
+    int get_shares() const {return shares; }
+    double get_share_val () const { return share_val; }
+    double get_total_val () const { return total_val; }
+10. It is a special pointer that points to the object invoking the method.
+    *this is the object itself.

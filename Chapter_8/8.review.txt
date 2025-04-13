@@ -1,0 +1,48 @@
+1.  short and frequently used, (x) non-recursive
+2.  a. void song(const char * name, int times = 1);
+    b. no change
+    c. yes
+3.  void iquote(int thing)
+    {
+        cout << "\"" << thing << "\"" << endl;
+    }
+    void iquote(double thing)
+    {
+        cout << "\"" << thing << "\"" << endl;
+    }
+    void iquote(string thing)
+    {
+        cout << "\"" << thing << "\"" << endl;
+    }
+4.  a.  void display(box & this_box) (x) const
+        {
+            cout << this_box.maker << ", " << this_box.height << ", " << this_box.width << ", " this_box.length << ", " << this_box.volume << endl;
+        }
+    b.  void set_volume(box & this_box)
+        {
+            this_box.volume = this_box.height * this_box.width * this_box.length;
+        }
+5.  For fill() function, change * pa to & pa in the argument list, change *pa to pa in the function body
+    For show() function, change the argument to const &
+6.  a.  both
+        double mass(double density, double volume = 1.0);
+        double mass(double density, double volume); double mass(double density);
+    b.  only function overloading
+        void repeat(int, const char *); void repeat(const char *);
+    c.  only function overloading
+        int average(int, int); double average(double, double);
+    d.  only function overloading (x) neither
+        char mangle(const char *); char * mangle(const char *);
+7.  template<typename T>
+    T greater(T a, T b)
+    {
+        return a > b ? a : b;
+    }
+8.  template <> double greater<box>(const box a, const box b)
+    {
+        return a.volume > b.volume ? a.volume : b.volume;
+    }
+    (x)
+    template <> box greater(const box a, const box b)
+        return a.volume > b.volume ? a : b;
+9.  float, float &, float &, int, double

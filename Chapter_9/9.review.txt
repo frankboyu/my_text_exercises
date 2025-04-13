@@ -1,0 +1,29 @@
+1.  (x)automatic, static, static, static
+    automatic
+    static variable with external linkage, defined in one file and declared with extern in another
+    static variable with internal linkage, or unnamed namespace
+    static variable with local linkage
+2.  using declaration imports a single function into the block, as if defined at the declaration
+    using directive imports all the functions into the block, as if defined in the region containing both the declaration and the namespace
+3.  (x)#include <iostream.h>
+    extern cout;
+    extern cin;
+    (v)std::cout, std::cin
+4.  #include <iostream>
+    using std::cout;
+    using std::cin;
+    (v)using std::endl;
+5.  Define the average function with static type and internal linkage.
+    In the first file, static int average(int, int);
+    In the second file, static double average(double, double);
+6.  10
+    4
+    0
+    Other: 10, 1
+    another(): 10, -4
+7.  1
+    4, 1, 2
+    2
+    2
+    4, 1, 2
+    2

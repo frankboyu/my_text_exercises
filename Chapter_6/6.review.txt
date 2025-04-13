@@ -1,0 +1,36 @@
+1.  It is more efficient because the spaces will skip the else if part of the code and do not need to check whether it is newline character
+2.  Ch will be promoted to int and the result would be integer instead of character
+3.  (x)Hi!
+    Send 
+    ct1 = 9, ct2 = 0
+4.  a. (weight >= 115) && (weight < 125)
+    b. (ch == 'q') || (ch == 'Q')
+    c. (x%2 == 0) && (x != 26)
+    d. (x%2 == 0) && (x%26 != 0)
+    e. ((donation >= 1000) && (donation <= 2000)) || (guest == 1)
+    f. ((ch >= 'a') && (ch <= 'z')) || ((ch >= 'A') && (ch <= 'Z'))
+5.  No, only if x is boolean type of variable
+6.  x>0 ? (x) : (-x)
+7.  switch(ch)
+    {
+        case 'A':
+            a_grade++;
+            break;
+        case 'B':
+            b_grade++;
+            break;
+        case 'C':
+            c_grade++;
+            break;
+        case 'D':
+            d_grade++;
+            break;
+        default:
+            f_grade++;
+    }
+8.  (x)The options would be easier to remember.
+9.  while ((ch=cin.get()) != 'Q')
+    {
+        if (ch == '\n')
+            line++;
+    }
