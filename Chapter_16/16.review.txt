@@ -1,0 +1,37 @@
+1.  class RQ1
+    {
+    private:
+        string st;
+    public:
+        RQ1() {}
+        RQ1(const char * s) {st = s;}
+        RQ1(const string s) {st = s;}
+        RQ1(const RQ1 & rq) {st = rq.st;}
+        ~RQ1() {}
+        RQ1 & operator=(const RQ1 & rq);
+    }
+    Default constructor and the destructor no longer need explicit definitions as the string has its default constructor and destructor
+    (v) explicit copy constructor, destructor and assignment operator no longer needed.
+2.  Easy concatenation of strings using + operator. Automatic built-in dynamic memory management
+3.  #include <algorithm>
+    #include <string>
+    #include <cctype>
+    void toUpper(string & s)
+    {
+        transform(s.begin(), s.end(), s.begin(), toupper)
+    }
+4.  Not correct. Has to use unique_ptr instead of auto_ptr for arrays
+    Not correct. No name of the pointer given
+    Not correct. The pointer has to have a pointer returned by new as argument.
+    Not correct. No type is given.
+5.  Because you can only get the last club you put in. And you have to unload a few before you find the one you want
+6.  Because a set is automatically sorted, which would not be the same order as the hole-by-hole sequence.
+    (v) only one copy of each value
+7.  Because iterators can make the algorithms independent of the data type.
+8.  Because the iterator is a concept, not a specific type to be required by the compiler
+    (v) more generality as ordinary pointers also work
+9.  Has insertion and removal methods. Has member functions to report the size, min/max values. Dynamic allocated memory supported
+10. sort(books.begin(), books.end()) would be invalid, as it requires a random access iterator, which the list lacks.
+    Yes. Use the sort method from list like books.sort();
+    (v) random_shuffle also doesn't work. Can copy to a vector, shuffle it and then copy back.
+11. It constructs a functor with a cutoff value of 10. And then used to compare with 15 to see if it is larger than 10. Returned true.

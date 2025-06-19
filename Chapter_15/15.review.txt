@@ -1,0 +1,12 @@
+1.  a. class clasp hasn't been declared before class snap (x) class keyword missing
+    b. class muff hasn't been declared before class cuff
+    c. method cuff::snip hasn't been declared before class muff
+2.  No. Because whichever class defined first will contain friend functions that have not been declared before.
+3.  The data memebers of the nested class is defined in private section and therefore not able to be accessed by the nesting class directly.
+    Also, the nested class is defined in the private section of nesting class as well. Then it can not be accessed by any classes derived from the nesting class
+4.  It returns control to the first function with try block through the sequence, instead of the calling function.
+5.  Most derived class first, then less and less derived.
+6.  Sample 1 could invoke the say method virtually defined for the ps class. It may be different from class Superb.
+    However, sample 2 explicitly type casts to Superb class and will only invoke the say method defined for it.
+    (x) Sample 1 can be Superb or derived classes, while sample 2 can only be Superb.
+7.  Static cast allows downcast, while dynamic cast doesn't
