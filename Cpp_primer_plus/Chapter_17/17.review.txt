@@ -1,0 +1,30 @@
+1.  It includes the definitions of the classes and methods of standard C++ I/O capabilities
+2.  Because the typed number is in text format, which includes the invidivual characters representing the number, instead of the internal machine coding of the number
+3.  Standard output is handled by cout and is buffered, while the standard error is handled by cerr and is not buffered
+    (v) standard error is always connected to the monitor while the output can be directed to a file
+4.  Because the the insertion operator is overloaded for all the fundamental types in C++
+5.  That the method returns a reference of the invoking object itself
+6.  int number;
+    cout << "Enter an integer";
+    cin >> number;
+    cout << showbase;
+    cout << setw(15) << dec << number << setw(15) << oct << number << setw(15) << hex << number << endl;
+7.  string name;
+    double wage, hours;
+    cout << "Enter your name: ";
+    cin >> name;
+    cout << "Enter your hourly wage: ";
+    cin >> wage;
+    cout << "Enter number of hours worked: ";
+    cin >> hours;
+    cout << "First format:" << endl;
+    cout << right;
+    cout << setw(30) << name << ": $" << setw(10) << wage << setw(5) << hours;
+    cout << "Second format:" << endl;
+    cout << left;
+    cout << setw(30) << name << ": $" << setw(10) << wage << setw(5) << hours;
+    (v) cout << showpoint << fixed << right;
+    setprecision(2) and setprecision(1)
+8.  ct1 = 8; ct2 = 9
+    (v)5 and 9
+9.  ingore() can only discard up to 80 characters, while get() can discard all the way to the newline character
